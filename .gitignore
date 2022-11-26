@@ -1,4 +1,8 @@
-
+/node_modules
+npm-debug.log
+.DS_Store
+/*.env
+bin
 package-lock.json
 *.js
 node_modules
