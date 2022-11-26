@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "My new Decentraland project",
   "scripts": {
-    "start": "dcl start",
+    "start": "CI=true dcl start -p ${PORT:=8000}",
     "build": "build-ecs",
     "watch": "build-ecs --watch",
     "ecs:install": "npm install --save-dev decentraland-ecs@latest",
@@ -18,10 +18,11 @@
     "@dcl/ui-scene-utils": "latest",
     "@types/cannon": "^0.1.7",
     "cannon": "^0.6.2",
+    "decentraland": "^3.13.0",
     "decentraland-ecs": "latest"
   },
   "devDependencies": {
-	"@dcl/eslint-config": "^1.0.1"
+    "@dcl/eslint-config": "^1.0.1"
   },
   "bundleDependencies": [
     "@dcl/ecs-quests",
