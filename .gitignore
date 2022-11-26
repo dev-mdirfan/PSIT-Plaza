@@ -1,0 +1,24 @@
+
+package-lock.json
+*.js
+node_modules
+bin/ 
+*.blend
+
+#  AWS keys
+server/functions/keys/aws-key.json
+server/functions/keys/opensea-key.json
+server/functions/lib/index.js.map
+server/functions/lib/index.js
+keys/
+server/functions/keys/
+
+## compiled scene
+bin
+
+
+## Metas folder
+
+metas/
+
+export

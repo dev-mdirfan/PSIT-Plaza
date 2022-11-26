@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    "outFile": "./bin/game.js",
+    "allowJs": true,
+    "paths": {
+      "@dcl/ui-scene-utils": [
+        "node_modules/@dcl/ui-scene-utils/dist/index.d.ts",
+        "node_modules\\@dcl\\ui-scene-utils\\dist\\index.d.ts"
+      ],
+      "@dcl/npc-scene-utils": [
+        "node_modules/@dcl/npc-scene-utils/dist/index.d.ts",
+        "node_modules\\@dcl\\npc-scene-utils\\dist\\index.d.ts"
+      ],
+      "@dcl/ecs-scene-utils": [
+        "node_modules/@dcl/ecs-scene-utils/dist/index.d.ts",
+        "node_modules\\@dcl\\ecs-scene-utils\\dist\\index.d.ts"
+      ],
+      "@dcl/crypto-scene-utils": [
+        "node_modules\\@dcl\\crypto-scene-utils\\dist\\index.d.ts",
+        "node_modules/@dcl/crypto-scene-utils/dist/index.d.ts"
+      ],
+      "eth-connect": [
+        "node_modules\\eth-connect\\eth-connect.d.ts",
+        "node_modules/eth-connect/eth-connect.d.ts"
+      ],
+      "dcl-quests-client/quests-client-amd": [
+        "./node_modules/dcl-quests-client/quests-client-amd"
+      ],
+      "@dcl/ecs-quests": [
+        "node_modules/@dcl/ecs-quests/dist/dcl-ecs-quests.d.ts",
+        "node_modules/@dcl/ecs-quests/dist/@dcl/dcl-ecs-quests.d.ts",
+        "node_modules\\@dcl\\ecs-quests\\dist\\@dcl\\dcl-ecs-quests.d.ts"
+      ]
+    },
+    "baseUrl": "."
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "files": [
+    "node_modules/cannon/build/cannon.min.js"
+  ],
+  "extends": "./node_modules/decentraland-ecs/types/tsconfig.json",
+  "compileOnSave": false
+}
